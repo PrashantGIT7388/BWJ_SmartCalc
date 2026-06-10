@@ -1050,7 +1050,7 @@
     }
     function recalc() { calculateAndUpdateUI(); }
 
-    function getAutoMakingCharge(mv, variant, weight, metalCost) {
+     function getAutoMakingCharge(mv, variant, weight, metalCost) {
       if (!isSilverMetal(mv)) {
         if (variant === 'keel_nosering') return 200;
         if (weight >= 3) return metalCost * 0.18;
@@ -1068,11 +1068,11 @@
     function getAutoMakingPercentDisplay(mv, variant, weight) {
       if (isSilverMetal(mv) || variant === 'keel_nosering') return 0;
       if (weight >= 3) return 18;
-      else if (weight < 1) return 25;
-      else if (weight >= 1 && weight < 2.5) return 23;
-      else if (weight >= 2.5 && weight < 3) return 20;
+      else if (weight < 1.5) return 23;
+      else if (weight >= 1.5 && weight < 3) return 20;
       return 18;
     }
+
     function getCurrentMetalCost() {
       const mv = document.getElementById('metal').value;
       let w = parseFloat(document.getElementById('weight').value) - getExtraWeightRemovalDeduction();
