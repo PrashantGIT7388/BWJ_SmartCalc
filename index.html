@@ -1387,10 +1387,28 @@
     
     function resetSilverAdjustments() { silverAdjustData = {}; renderSilverAdjustTable(); updateSummaryPanel(); document.getElementById("silverGrandTotalInput").value = 0; }
     
+   function renderBillList() { 
+      let container = document.getElementById("billContainer"); 
+      if (billItems.length === 0) { 
+        container.innerHTML = '<div style="text-align:center; padding:2rem;">✨ No items added.</div>'; 
+        updateSummaryPanel(); 
+        return; 
+      } 
+      let html = '<table class="bill-table"><thead><tr><th>Metal</th><th>Item Type</th><th>Making</th><th>Wt(g)</th><th>Before GST</th><th>Final Amount</th><th></th><tr></thead><tbody>'; 
+      billItems.forEach(it => { 
+        let finalPrice = (it.isSilver ? silverAdjustData[it.id]?.newFinal : goldAdjustData[it.id]?.newFinal) ?? it.finalPrice; 
+        let makingDisplay = it.makingDisplay; 
+        if ((it.isSilver && silverAdjustData[it.id]) || (!it.isSilver && goldAdjustData[it.id])) makingDisplay = "Adjusted"; 
+        html += `<tr><td style="font-weight:500;">${it.metalName}</td>
+          <td style="font-weight:500;">${it.itemType}<br><span style="font-size:0.6rem;">rate: ₹${it.rate}/g</span></td>
+          
+          <td style="font-weight:500;">${makingDisplay}</td>
+          <td style="font-weight:900; color:red; font-size:0.9rem;">${it.weight.toFixed(2)} g</td>
+          <td style="font-weight:500;font-size:0.9rem">₹${it.totalBeforeGst.toFixed(2)}</td>
+          <td style="font-weight:700; color:green; font-size:0.9rem">₹${finalPrice.toFixed(2)}</td><td><button class="delete-item" onclick="removeBillItem(${it.id})">✖</button></td>
+          </tr>`; }); html += '</tbody></table>'; container.innerHTML = html; updateSummaryPanel(); }
    
-    function renderBillList() 
-    { let container = document.getElementById("billContainer"); if (billItems.length === 0) { container.innerHTML = '<div style="text-align:center; padding:2rem;">✨ No items added.</div>'; updateSummaryPanel(); return; } let html = '<table class="bill-table"><thead><tr><th>Metal</th><th>Item Type</th><th>Wt(g)</th><th>Making</th><th>Before GST</th><th>Final Amount</th><th></th></tr></thead><tbody>'; billItems.forEach(it => { let finalPrice = (it.isSilver ? silverAdjustData[it.id]?.newFinal : goldAdjustData[it.id]?.newFinal) ?? it.finalPrice; let makingDisplay = it.makingDisplay; if ((it.isSilver && silverAdjustData[it.id]) || (!it.isSilver && goldAdjustData[it.id])) makingDisplay = "Adjusted"; html += `<tr><td>${it.metalName}</td><td>${it.itemType}<br><span style="font-size:0.6rem;">rate: ₹${it.rate}/g</span></td><td>${it.weight.toFixed(2)}g</td><td>${makingDisplay}</td><td>₹${it.totalBeforeGst.toFixed(2)}</td><td style="font-weight:700;">₹${finalPrice.toFixed(2)}</td><td><button class="delete-item" onclick="removeBillItem(${it.id})">✖</button></td></tr>`; }); html += '</tbody></table>'; container.innerHTML = html; updateSummaryPanel(); }
-   
+ 
     function renderAllTables() { renderBillList(); renderGoldAdjustTable(); renderSilverAdjustTable(); updateSummaryPanel(); }
     window.removeBillItem = removeBillItem;
 
