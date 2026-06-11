@@ -1055,13 +1055,7 @@
      function getAutoMakingCharge(mv, variant, weight, metalCost) {
       if (!isSilverMetal(mv)) {
         if (variant === 'keel_nosering') return 200;
-         if (weight >= 3 && mv == "20"){
-           return metalCost * 0.16
-         }else{ return metalCost * 0.18}
-        //  {
-        //   if(mv=="20"){return metalCost * 0.16;}
-        //   return metalCost * 0.18;
-        // }
+         if (weight >= 3) return metalCost * 0.18
         else if (weight < 1.5) return metalCost * 0.23;
         else if (weight >= 1.5 && weight < 3) return metalCost * 0.20;
         return metalCost * 0.18;
@@ -1075,13 +1069,8 @@
     }
     function getAutoMakingPercentDisplay(mv, variant, weight) {
       if (isSilverMetal(mv) || variant === 'keel_nosering') return 0;
-      if (weight >= 3 && mv == "20"){
-           return metalCost * 0.16
-         }else{ return metalCost * 0.18}
-       // {
-       //    if(mv=="20"){return metalCost * 0.16;}
-       //    return metalCost * 0.18;
-       //  }
+      if (weight >= 3) return metalCost * 0.18}
+     
       else if (weight < 1.5) return 23;
       else if (weight >= 1.5 && weight < 3) return 20;
       return 18;
