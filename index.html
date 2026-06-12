@@ -30,7 +30,6 @@
       letter-spacing: -0.02em;
     }
 
-    /* rates card & existing styles */
     .rates-card {
       background: #ffffff;
       border-radius: 28px;
@@ -44,7 +43,7 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      flex-wrap: wrap;2
+      flex-wrap: wrap;
       gap: 8px;
       cursor: pointer;
     }
@@ -271,7 +270,6 @@
       padding-left: 12px;
     }
 
-    /* Total control bar */
     .total-control-bar {
       background: linear-gradient(135deg, #fef9ef 0%, #fff6e8 100%);
       border-radius: 20px;
@@ -471,7 +469,6 @@
       -webkit-overflow-scrolling: touch;
     }
 
-   
     .adjustment-table-wrapper.toggleable.visible {
       display: block;
     }
@@ -570,8 +567,6 @@
       font-size: 0.7rem;
     }
 
-
-
     .btn-clear {
       background: #e6d9ce;
       border: none;
@@ -606,7 +601,6 @@
       min-width: 250px;
     }
 
-    /* focus outline for better accessibility */
     input:focus,
     select:focus,
     button:focus {
@@ -619,226 +613,53 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    /* ========== PROFESSIONAL MOBILE STYLES ========== */
     @media (max-width: 768px) {
-      body {
-        padding: 12px;
-      }
-
-      .app-container {
-        max-width: 100%;
-      }
-
-      .brand-bar h1 {
-        font-size: 1.1rem;
-      }
-
-      .brand-bar h1::before {
-        font-size: 1.2rem;
-      }
-
-      .admin-toggle {
-        padding: 5px 12px;
-        font-size: 0.7rem;
-      }
-
-      .estimator-card,
-      .bill-card,
-      .adjustment-card {
-        padding: 16px;
-        margin-bottom: 16px;
-        border-radius: 20px;
-      }
-
-      .estimator-header h3,
-      .bill-header h3 {
-        font-size: 1.1rem;
-      }
-
-      .horizontal-fields {
-        flex-direction: column;
-        gap: 10px;
-      }
-
-      .field-group {
-        min-width: 100%;
-        width: 100%;
-      }
-
-      .btn-add {
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-      }
-
-      .price-cards {
-        flex-direction: column;
-        gap: 8px;
-      }
-
-      .price-item {
-        min-width: auto;
-      }
-
-      .price-value {
-        font-size: 1rem;
-      }
-
-      .total-control-bar {
-        flex-direction: column;
-        align-items: stretch;
-        padding: 12px;
-      }
-
-      .total-badge {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 8px 12px;
-      }
-
-      .total-badge span:first-child {
-        font-size: 0.7rem;
-      }
-
-      .total-badge span:last-child {
-        font-size: 1rem;
-      }
-
-      .total-edit-area {
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-
-      .total-edit-area input {
-        width: 100%;
-        max-width: 200px;
-      }
-
-      .apply-total-btn,
-      .reset-bill-total {
-        padding: 6px 12px;
-        font-size: 0.7rem;
-      }
-
-      .grand-total-adjust {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 8px;
-      }
-
-      .grand-total-adjust input {
-        width: 100%;
-      }
-
-      .grand-total-adjust span {
-        font-size: 0.8rem;
-      }
-
-      .adjustment-input {
-        width: 80px;
-        font-size: 0.65rem;
-        padding: 4px;
-      }
-
-      .bill-table th,
-      .bill-table td,
-      .adjustment-table th,
-      .adjustment-table td {
-        padding: 6px 4px;
-        font-size: 0.65rem;
-      }
-
-      .delete-item {
-        padding: 3px 8px;
-        font-size: 0.65rem;
-      }
-
-      .view-btn,
-      .btn-clear {
-        padding: 5px 10px;
-        font-size: 0.65rem;
-      }
-
-      .card-header {
-        padding: 12px 16px 0 16px;
-      }
-
-      .card-header h2 {
-        font-size: 1rem;
-      }
-
-      .rates-grid {
-        gap: 8px;
-        padding: 16px;
-      }
-
-      .input-row {
-        min-width: 100%;
-        padding: 8px 12px;
-      }
-
-      .label-badge {
-        font-size: 0.8rem;
-      }
-
-      #horizontal_tables {
-        flex-direction: column;
-        gap: 16px;
-      }
-
-      #horizontal_tables .adjustment-card {
-        min-width: 100%;
-      }
-
-      .bill-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-      }
-
-      .bill-header div {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-      }
-
-      .auto-badge {
-        font-size: 0.6rem;
-      }
+      body { padding: 12px; }
+      .app-container { max-width: 100%; }
+      .brand-bar h1 { font-size: 1.1rem; }
+      .brand-bar h1::before { font-size: 1.2rem; }
+      .admin-toggle { padding: 5px 12px; font-size: 0.7rem; }
+      .estimator-card, .bill-card, .adjustment-card { padding: 16px; margin-bottom: 16px; border-radius: 20px; }
+      .estimator-header h3, .bill-header h3 { font-size: 1.1rem; }
+      .horizontal-fields { flex-direction: column; gap: 10px; }
+      .field-group { min-width: 100%; width: 100%; }
+      .btn-add { width: 100%; text-align: center; justify-content: center; }
+      .price-cards { flex-direction: column; gap: 8px; }
+      .price-item { min-width: auto; }
+      .price-value { font-size: 1rem; }
+      .total-control-bar { flex-direction: column; align-items: stretch; padding: 12px; }
+      .total-badge { flex-direction: row; justify-content: space-between; align-items: center; padding: 8px 12px; }
+      .total-badge span:first-child { font-size: 0.7rem; }
+      .total-badge span:last-child { font-size: 1rem; }
+      .total-edit-area { justify-content: center; flex-wrap: wrap; }
+      .total-edit-area input { width: 100%; max-width: 200px; }
+      .apply-total-btn, .reset-bill-total { padding: 6px 12px; font-size: 0.7rem; }
+      .grand-total-adjust { flex-direction: column; align-items: stretch; gap: 8px; }
+      .grand-total-adjust input { width: 100%; }
+      .grand-total-adjust span { font-size: 0.8rem; }
+      .adjustment-input { width: 80px; font-size: 0.65rem; padding: 4px; }
+      .bill-table th, .bill-table td, .adjustment-table th, .adjustment-table td { padding: 6px 4px; font-size: 0.65rem; }
+      .delete-item { padding: 3px 8px; font-size: 0.65rem; }
+      .view-btn, .btn-clear { padding: 5px 10px; font-size: 0.65rem; }
+      .card-header { padding: 12px 16px 0 16px; }
+      .card-header h2 { font-size: 1rem; }
+      .rates-grid { gap: 8px; padding: 16px; }
+      .input-row { min-width: 100%; padding: 8px 12px; }
+      .label-badge { font-size: 0.8rem; }
+      #horizontal_tables { flex-direction: column; gap: 16px; }
+      #horizontal_tables .adjustment-card { min-width: 100%; }
+      .bill-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+      .bill-header div { display: flex; flex-wrap: wrap; gap: 8px; }
+      .auto-badge { font-size: 0.6rem; }
     }
 
-    /* Small phones */
     @media (max-width: 480px) {
-      body {
-        padding: 8px;
-      }
-
-      .estimator-card,
-      .bill-card,
-      .adjustment-card {
-        padding: 12px;
-        border-radius: 18px;
-      }
-
-      .price-value {
-        font-size: 0.9rem;
-      }
-
-      .total-badge span:last-child {
-        font-size: 0.9rem;
-      }
-
-      .grand-total,
-      .grand-total-adjust {
-        padding: 10px 12px;
-        font-size: 0.85rem;
-      }
-
-      select, input {
-        padding: 8px 10px;
-        font-size: 0.8rem;
-      }
+      body { padding: 8px; }
+      .estimator-card, .bill-card, .adjustment-card { padding: 12px; border-radius: 18px; }
+      .price-value { font-size: 0.9rem; }
+      .total-badge span:last-child { font-size: 0.9rem; }
+      .grand-total, .grand-total-adjust { padding: 10px 12px; font-size: 0.85rem; }
+      select, input { padding: 8px 10px; font-size: 0.8rem; }
     }
   </style>
 </head>
@@ -868,7 +689,6 @@
       <button id="adminToggleBtn" class="admin-toggle">🔐 Admin Access</button>
     </div>
 
-    <!-- Instant Price Estimator -->
     <div class="estimator-card">
       <div class="estimator-header">
         <h3>⚡ Instant Price Estimator</h3>
@@ -876,19 +696,13 @@
       </div>
       <div class="horizontal-fields">
         <div class="field-group"><label>METAL TYPE</label><select id="metal" tabindex="1">
-            <option value="18">18K Gold</option>
-            <option value="20">20K Gold</option>
-            <option value="22">22K Gold</option>
-            <option value="24">24K Gold</option>
-            <option value="1">Pure Silver</option>
-            <option value="92.5">925 Silver</option>
+            <option value="18">18K Gold</option><option value="20">20K Gold</option><option value="22">22K Gold</option>
+            <option value="24">24K Gold</option><option value="1">Pure Silver</option><option value="92.5">925 Silver</option>
           </select></div>
         <div class="field-group" id="dynamicTypeContainer"><label>ITEM VARIANT</label><select id="dynamicItemSelect" tabindex="2"></select></div>
         <div class="field-group"><label>Extra Removal</label><select id="dynamicextraweightremove" tabindex="3">
-            <option value="default">Default</option>
-            <option value="tag-remove">Tag remove</option>
-            <option value="stone-remove">Stone remove</option>
-            <option value="tag-stone-remove">Tag & Stone</option>
+            <option value="default">Default</option><option value="tag-remove">Tag remove</option>
+            <option value="stone-remove">Stone remove</option><option value="tag-stone-remove">Tag & Stone</option>
           </select>
           <div id="stoneAmountContainer" class="stone-amount-container hidden"><input type="number" id="stoneAmount" placeholder="Stone Amount (₹)" step="any" value="0" tabindex="4" /></div>
         </div>
@@ -904,7 +718,6 @@
       </div>
     </div>
 
-    <!-- Bill Register -->
     <div class="bill-card">
       <div class="bill-header">
         <h3>🧾 Bill Register</h3>
@@ -913,37 +726,26 @@
       <div id="billContainer" class="bill-table-wrapper">
         <div class="empty-bill" style="text-align:center; padding:2rem;">✨ No items added.</div>
       </div>
-   <div class="grand-total" style="margin-left: auto; margin-right:150px width: fit-content;" id="grandTotalDisplay">
-    💰 Grand Total (incl. GST): ₹ 0.00
-</div>
+      <div class="grand-total" id="grandTotalDisplay">💰 Grand Total (incl. GST): ₹ 0.00</div>
     </div>
 
     <div id="horizontal_tables">
-      <!-- GOLD ADJUSTMENT SECTION -->
       <div class="adjustment-card">
         <div class="bill-header">
           <h3>✏️ GOLD Items Only</h3>
-          <div>
-            <button id="viewGoldBtn" class="view-btn" style="background: white; color: white; "></button>
-            <button id="resetGoldAdjustBtn" class="btn-clear">⟳ Reset Gold</button></div>
+          <div><button id="viewGoldBtn" class="view-btn">👁️ View Gold</button><button id="resetGoldAdjustBtn" class="btn-clear">⟳ Reset Gold</button></div>
         </div>
-        <div id="goldAdjustContainer" class="adjustment-table-wrapper toggleable">
-          <div style="text-align:center; padding:2rem;">✨ Add gold items to enable adjustments</div>
-        </div>
+        <div id="goldAdjustContainer" class="adjustment-table-wrapper toggleable"><div style="text-align:center; padding:2rem;">✨ Add gold items to enable adjustments</div></div>
         <div class="grand-total-adjust"><span>🎯 Adjust Gold Total:</span><input type="number" id="goldGrandTotalInput" placeholder="Desired gold total" step="any" value="0" /><button id="applyGoldTotalBtn" class="view-btn">Update</button></div>
         <div class="grand-total" id="goldAdjustedTotal">💰 Adjusted Gold Total: ₹ 0.00</div>
       </div>
 
-      <!-- SILVER ADJUSTMENT -->
       <div class="adjustment-card">
         <div class="bill-header">
           <h3>✏️ SILVER Items Only</h3>
-          <div><button id="viewSilverBtn" class="view-btn" style="background: white; color: white; " ></button>
-            <button id="resetSilverAdjustBtn" class="btn-clear">⟳ Reset Silver</button></div>
+          <div><button id="viewSilverBtn" class="view-btn">👁️ View Silver</button><button id="resetSilverAdjustBtn" class="btn-clear">⟳ Reset Silver</button></div>
         </div>
-        <div id="silverAdjustContainer" class="adjustment-table-wrapper toggleable">
-          <div style="text-align:center; padding:2rem;">✨ Add silver items to enable adjustments</div>
-        </div>
+        <div id="silverAdjustContainer" class="adjustment-table-wrapper toggleable"><div style="text-align:center; padding:2rem;">✨ Add silver items to enable adjustments</div></div>
         <div class="grand-total-adjust"><span>🎯 Adjust Silver Total :</span><input type="number" id="silverGrandTotalInput" placeholder="Desired silver total" step="any" value="0" /><button id="applySilverTotalBtn" class="view-btn">Update</button></div>
         <div class="grand-total" id="silverAdjustedTotal">💰 Adjusted Silver Total: ₹ 0.00</div>
       </div>
@@ -1003,10 +805,8 @@
     // ========== DOM ELEMENTS ==========
     const input18k = document.getElementById("gold18KRate"), input20k = document.getElementById("gold20KRate"), input22k = document.getElementById("gold22KRate"), input24k = document.getElementById("gold24KRate"), silverInput = document.getElementById("silverRate"), silver925Input = document.getElementById("silver925Rate");
     const makingPercentInput = document.getElementById("makingpercentage"), makingChargeInput = document.getElementById("makingChargeInput");
-    const autoPercentHint = document.getElementById("autoPercentHint");
-    const autoChargeHint = document.getElementById("autoChargeHint");
-    const beforeGstLabel = document.getElementById("beforeGstLabel");
-    const afterGstItem = document.getElementById("afterGstItem");
+    const autoPercentHint = document.getElementById("autoPercentHint"), autoChargeHint = document.getElementById("autoChargeHint");
+    const beforeGstLabel = document.getElementById("beforeGstLabel"), afterGstItem = document.getElementById("afterGstItem");
     let isManualMode = false, manualPercent = null, manualCharge = null, isUpdating = false;
 
     function loadRates() { [input18k, input20k, input22k, input24k, silverInput, silver925Input].forEach(i => { let v = localStorage.getItem(i.id); if (v) i.value = v; }); }
@@ -1052,30 +852,23 @@
     }
     function recalc() { calculateAndUpdateUI(); }
 
-     function getAutoMakingCharge(mv, variant, weight, metalCost) {
+    function getAutoMakingCharge(mv, variant, weight, metalCost) {
       if (!isSilverMetal(mv)) {
         if (variant === 'keel_nosering') return 200;
-         if (weight >= 3) return metalCost * 0.18
-        else if (weight < 1.5) return metalCost * 0.23;
-        else if (weight >= 1.5 && weight < 3) return metalCost * 0.20;
-        return metalCost * 0.18;
+        if (weight >= 3) return mv === "20" ? metalCost * 0.16 : metalCost * 0.18;
+        else return weight >= 1.5 ? metalCost * 0.20 : metalCost * 0.23;
       } else {
         if (variant === 'bichhiya_2ps') return weight <= 5 ? 70 : 100;
         if (variant === 'bichhiya_4ps') return weight <= 10 ? 150 : 200;
         if (variant === 'bichhiya_6ps') return weight <= 15 ? 200 : 250;
-        if (weight <= 20) return 200;
-        return 200 + (weight - 20) * 5;
+        return weight <= 20 ? 200 : 200 + (weight - 20) * 5;
       }
     }
     function getAutoMakingPercentDisplay(mv, variant, weight) {
       if (isSilverMetal(mv) || variant === 'keel_nosering') return 0;
-      if (weight >= 3) return metalCost * 0.18}
-     
-      else if (weight < 1.5) return 23;
-      else if (weight >= 1.5 && weight < 3) return 20;
-      return 18;
+      if (weight >= 3) return mv === "20" ? 16 : 18;
+      else return weight >= 1.5 ? 20 : 23;
     }
-
     function getCurrentMetalCost() {
       const mv = document.getElementById('metal').value;
       let w = parseFloat(document.getElementById('weight').value) - getExtraWeightRemovalDeduction();
@@ -1106,13 +899,8 @@
       return (!isSilverMetal(mv) && variant === 'keel_nosering');
     }
     function toggleGSTDisplay() {
-      if (shouldAvoidGST()) {
-        afterGstItem.classList.add('gst-hidden');
-        beforeGstLabel.innerHTML = '💰 FINAL PRICE (No GST)';
-      } else {
-        afterGstItem.classList.remove('gst-hidden');
-        beforeGstLabel.innerHTML = '📦 Price BEFORE GST';
-      }
+      if (shouldAvoidGST()) { afterGstItem.classList.add('gst-hidden'); beforeGstLabel.innerHTML = '💰 FINAL PRICE (No GST)'; }
+      else { afterGstItem.classList.remove('gst-hidden'); beforeGstLabel.innerHTML = '📦 Price BEFORE GST'; }
     }
     function getFullCalculation() {
       const mv = document.getElementById('metal').value;
@@ -1168,7 +956,7 @@
       const c = getFullCalculation();
       document.getElementById('metalValueDisplay').innerText = '₹ ' + c.metalCost.toFixed(2);
       document.getElementById('result_before_gst').innerHTML = '₹ ' + c.totalBeforeGst.toFixed(2);
-      document.getElementById('result_after_gst').innerHTML = '₹ ' + c.totalAfterGst;
+      document.getElementById('result_after_gst').innerHTML = '₹ ' + c.totalAfterGst.toFixed(2);
       if (!isUpdating) {
         isUpdating = true;
         if (isManualMode && manualPercent !== null) makingPercentInput.value = manualPercent.toFixed(2);
@@ -1180,7 +968,6 @@
       return c;
     }
 
-    // Focus management
     function setupFocusManagement() {
       const focusableElements = [document.getElementById('metal'), document.getElementById('dynamicItemSelect'), document.getElementById('dynamicextraweightremove'), document.getElementById('stoneAmount'), document.getElementById('weight'), document.getElementById('addBtn'), document.getElementById('makingpercentage'), document.getElementById('makingChargeInput')].filter(el => el !== null);
       for (let i = 0; i < focusableElements.length; i++) {
@@ -1199,7 +986,6 @@
       addBtn.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); addToBillList(e); document.getElementById('weight').focus(); } });
     }
 
-    // Bill management functions
     function getMetalDisplayName(mv) { const map = { "18": "18K Gold", "20": "20K Gold", "22": "22K Gold", "24": "24K Gold", "1": "Pure Silver", "92.5": "925 Silver" }; return map[mv] || mv; }
     function getVariantDisplay(mv, vc) {
       const isSilver = isSilverMetal(mv);
@@ -1224,12 +1010,53 @@
     }
     function removeBillItem(id) { billItems = billItems.filter(i => i.id !== id); delete goldAdjustData[id]; delete silverAdjustData[id]; renderAllTables(); }
     function clearAllItems() { if (confirm("Clear all items?")) { billItems = []; goldAdjustData = {}; silverAdjustData = {}; renderAllTables(); } }
-    function computeTotals() { let goldTotal = 0, silverTotal = 0; billItems.forEach(it => { let finalVal = goldAdjustData[it.id]?.newFinal ?? silverAdjustData[it.id]?.newFinal ?? it.finalPrice; if (it.isSilver) silverTotal += finalVal; else goldTotal += finalVal; }); return { goldTotal, silverTotal, grandTotal: goldTotal + silverTotal }; }
-    function updateSummaryPanel() { let { goldTotal, silverTotal, grandTotal } = computeTotals(); document.getElementById("summaryGoldTotal").innerHTML = "₹ " + goldTotal.toFixed(2); document.getElementById("summarySilverTotal").innerHTML = "₹ " + silverTotal.toFixed(2); document.getElementById("summaryBillGrandTotal").innerHTML = "₹ " + grandTotal.toFixed(2); document.getElementById("grandTotalDisplay").innerHTML = `💰 Grand Total (incl. GST): ₹ ${grandTotal.toFixed(2)}`; let manualInput = document.getElementById("manualBillTotalInput"); if (manualInput && !manualInput._syncing) manualInput.value = grandTotal.toFixed(2); }
-    function applyBillTotalToGoldOnly(newTotalBill) { let { goldTotal, silverTotal } = computeTotals(); let targetGoldTotal = newTotalBill - silverTotal; if (targetGoldTotal < 0) { alert("Cannot be less than silver total"); return false; } let goldItems = billItems.filter(i => !i.isSilver); if (!goldItems.length) { alert("No gold items"); return false; } let totalOrigMaking = goldItems.reduce((s, i) => s + i.originalMakingCharge, 0); if (totalOrigMaking === 0) { alert("Making zero"); return false; } let totalMetal = goldItems.reduce((s, i) => s + i.itemValue, 0); let hasGst = goldItems.some(i => !i.noGST); let targetBefore = hasGst ? targetGoldTotal / 1.03 : targetGoldTotal; let neededMaking = targetBefore - totalMetal; if (neededMaking < 0) { alert("Target below metal value"); return false; } goldItems.forEach(item => { let prop = item.originalMakingCharge / totalOrigMaking; let newMaking = neededMaking * prop; let newFinal = item.noGST ? item.itemValue + newMaking : Math.round(((item.itemValue + newMaking) * 1.03) / 10) * 10; goldAdjustData[item.id] = { desiredFinal: newFinal, newMaking, newFinal }; }); renderAllTables(); return true; }
+    
+    function computeTotals() { 
+      let goldTotal = 0, silverTotal = 0; 
+      billItems.forEach(it => { 
+        let finalVal = (it.isSilver ? silverAdjustData[it.id]?.newFinal : goldAdjustData[it.id]?.newFinal) ?? it.finalPrice; 
+        if (it.isSilver) silverTotal += finalVal; 
+        else goldTotal += finalVal; 
+      }); 
+      return { goldTotal, silverTotal, grandTotal: goldTotal + silverTotal }; 
+    }
+    
+    function updateSummaryPanel() { 
+      let { goldTotal, silverTotal, grandTotal } = computeTotals(); 
+      document.getElementById("summaryGoldTotal").innerHTML = "₹ " + goldTotal.toFixed(2); 
+      document.getElementById("summarySilverTotal").innerHTML = "₹ " + silverTotal.toFixed(2); 
+      document.getElementById("summaryBillGrandTotal").innerHTML = "₹ " + grandTotal.toFixed(2); 
+      document.getElementById("grandTotalDisplay").innerHTML = `💰 Grand Total (incl. GST): ₹ ${grandTotal.toFixed(2)}`; 
+      let manualInput = document.getElementById("manualBillTotalInput"); 
+      if (manualInput && !manualInput._syncing) manualInput.value = grandTotal.toFixed(2); 
+    }
+    
+    function applyBillTotalToGoldOnly(newTotalBill) { 
+      let { goldTotal, silverTotal } = computeTotals(); 
+      let targetGoldTotal = newTotalBill - silverTotal; 
+      if (targetGoldTotal < 0) { alert("Cannot be less than silver total"); return false; } 
+      let goldItems = billItems.filter(i => !i.isSilver); 
+      if (!goldItems.length) { alert("No gold items"); return false; } 
+      let totalOrigMaking = goldItems.reduce((s, i) => s + i.originalMakingCharge, 0); 
+      if (totalOrigMaking === 0) { alert("Making zero"); return false; } 
+      let totalMetal = goldItems.reduce((s, i) => s + i.itemValue, 0); 
+      let hasGst = goldItems.some(i => !i.noGST); 
+      let targetBefore = hasGst ? targetGoldTotal / 1.03 : targetGoldTotal; 
+      let neededMaking = targetBefore - totalMetal; 
+      if (neededMaking < 0) { alert("Target below metal value"); return false; } 
+      goldItems.forEach(item => { 
+        let prop = item.originalMakingCharge / totalOrigMaking; 
+        let newMaking = neededMaking * prop; 
+        let newFinal = item.noGST ? item.itemValue + newMaking : Math.round(((item.itemValue + newMaking) * 1.03) / 10) * 10; 
+        goldAdjustData[item.id] = { desiredFinal: newFinal, newMaking, newFinal }; 
+      }); 
+      renderAllTables(); 
+      return true; 
+    }
+    
     function resetBillToOriginal() { goldAdjustData = {}; silverAdjustData = {}; renderAllTables(); alert("Reset to original"); }
 
-    // Adjustment rendering with weight column between Making and New Making
+    // ========== GOLD ADJUSTMENT TABLE WITH BLACK TOTAL ROW ==========
     function renderGoldAdjustTable() {
       let golds = billItems.filter(i => !i.isSilver);
       let container = document.getElementById("goldAdjustContainer");
@@ -1238,25 +1065,39 @@
         document.getElementById("goldAdjustedTotal").innerHTML = "💰 Adjusted Gold Total: ₹ 0.00";
         return;
       }
+      let tmv = 0, tw = 0, tm = 0, tv = 0;
       let totalAdj = 0;
-      let html = '<table class="adjustment-table"><thead><tr><th>Item</th><th>Metal Value</th><th>Making</th><th>Wt(g)</th><th>New Making</th><th>New Final</th><th>Update Final Value</th></tr></thead><tbody>';
+      let html = '<table class="adjustment-table"><thead><tr><th>Item</th><th>Metal Value</th><th>Wt(g)</th><th>Original Making</th><th>New Making</th><th>New Final</th><th>Update Final Value</th></tr></thead><tbody>';
+      
       golds.forEach(item => {
         let adj = goldAdjustData[item.id] || { desiredFinal: item.finalPrice, newMaking: item.makingCharge, newFinal: item.finalPrice };
+        tmv += item.itemValue; tw += item.weight; tm += adj.newMaking; tv += adj.newFinal;
         totalAdj += adj.newFinal;
         html += `<tr>
           <td>${item.metalName}<br><span style="font-size:0.6rem;">₹${item.rate}/g</span></td>
-          <td>₹${item.itemValue.toFixed(2)}</td>
-          <td>₹${adj.newMaking.toFixed(2)}<br><span style="font-size:0.55rem;">(orig:₹${item.originalMakingCharge.toFixed(2)})</td>
-          <td>${item.weight.toFixed(2)}g</td>
-         
-            <td><span id="silver-newmaking-${item.id}" style="color: ${adj.newMaking !== item.originalMakingCharge ? '#2563eb' : '#1e293b'}; font-weight:1000;">₹${adj.newMaking.toFixed(2)}</span></td>
-          <td><span id="gold-newfinal-${item.id}" style="font-weight:700;color:#c0392b;">₹${adj.newFinal.toFixed(2)}</td>
+          <td>₹${item.itemValue.toFixed(2)}</span></span></span></span></span></span></span></span></td>
+          <td>${item.weight.toFixed(2)}g</span></span></span></span></span></span></span></span></td>
+          <td>₹${item.originalMakingCharge.toFixed(2)}</span></span></span></span></span></span></span></span></td>
+          <td><span id="gold-newmaking-${item.id}" style="color: ${adj.newMaking !== item.originalMakingCharge ? '#2563eb' : '#1e293b'}; font-weight:600;">₹${adj.newMaking.toFixed(2)}</span></td>
+          <td><span id="gold-newfinal-${item.id}" style="font-weight:700;color:#c0392b;">₹${adj.newFinal.toFixed(2)}</span></td>
           <td><input type="number" id="gold-desired-${item.id}" class="adjustment-input" value="${adj.desiredFinal}" step="any"></td>
         </tr>`;
       });
-      html += `<tfoot><tr><td colspan="6"><strong>TOTAL</strong></td><td><strong>₹${totalAdj.toFixed(2)}</strong></td></tr></tfoot></tbody></td>`;
+
+      // BLACK BACKGROUND TOTAL ROW
+      html += `<tfoot><tr style="font-weight:800; background:#1e1e2f; color:#ffffff; font-size:0.9rem;">
+        <td><strong style="color:#ffffff;">TOTAL</strong></td>
+        <td><strong style="color:#f5b042;">₹${tmv.toFixed(2)}</strong></td>
+        <td><strong style="color:#f5b042;">${tw.toFixed(2)}g</strong></td>
+        <td><strong style="color:#f5b042;">₹${golds.reduce((s, i) => s + i.originalMakingCharge, 0).toFixed(2)}</strong></td>
+        <td><strong style="color:#f5b042;">₹${tm.toFixed(2)}</strong></td>
+        <td><strong style="color:#f5b042;">₹${tv.toFixed(2)}</strong></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+        <td></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+      </tr></tfoot></tbody></tr>`;
+      
       container.innerHTML = html;
       document.getElementById("goldAdjustedTotal").innerHTML = `💰 Adjusted Gold Total: ₹ ${totalAdj.toFixed(2)}`;
+      
       golds.forEach(item => {
         let inp = document.getElementById(`gold-desired-${item.id}`);
         if (inp) inp.onchange = (e) => { let val = parseFloat(e.target.value); if (!isNaN(val) && val > 0) updateGoldAdjustment(item.id, val); };
@@ -1268,19 +1109,10 @@
       if (!item || item.isSilver) return; 
       let finalDesired = Math.max(desired, item.itemValue); 
       let newMaking, newFinal; 
-      if (item.noGST) { 
-        newMaking = finalDesired - item.itemValue; 
-        if (newMaking < 0) newMaking = 0; 
-        newFinal = item.itemValue + newMaking; 
-      } else { 
-        let before = finalDesired / 1.03; 
-        newMaking = before - item.itemValue; 
-        if (newMaking < 0) newMaking = 0; 
-        newFinal = Math.round(((item.itemValue + newMaking) * 1.03) / 10) * 10; 
-      } 
+      if (item.noGST) { newMaking = finalDesired - item.itemValue; if (newMaking < 0) newMaking = 0; newFinal = item.itemValue + newMaking; } 
+      else { let before = finalDesired / 1.03; newMaking = before - item.itemValue; if (newMaking < 0) newMaking = 0; newFinal = Math.round(((item.itemValue + newMaking) * 1.03) / 10) * 10; } 
       goldAdjustData[id] = { desiredFinal: finalDesired, newMaking, newFinal }; 
-      renderGoldAdjustTable(); 
-      updateSummaryPanel(); 
+      renderGoldAdjustTable(); updateSummaryPanel(); 
     }
     
     function applyGoldGrandTotal() { 
@@ -1303,13 +1135,12 @@
         let newFinal = item.noGST ? item.itemValue + newMaking : Math.round(((item.itemValue + newMaking) * 1.03) / 10) * 10; 
         goldAdjustData[item.id] = { desiredFinal: newFinal, newMaking, newFinal }; 
       }); 
-      renderGoldAdjustTable(); 
-      updateSummaryPanel(); 
-      alert("Gold total adjusted"); 
+      renderGoldAdjustTable(); updateSummaryPanel(); alert("Gold total adjusted"); 
     }
     
     function resetGoldAdjustments() { goldAdjustData = {}; renderGoldAdjustTable(); updateSummaryPanel(); document.getElementById("goldGrandTotalInput").value = 0; }
-    
+
+    // ========== SILVER ADJUSTMENT TABLE WITH BLACK TOTAL ROW ==========
     function renderSilverAdjustTable() { 
       let silvers = billItems.filter(i => i.isSilver); 
       let container = document.getElementById("silverAdjustContainer"); 
@@ -1318,24 +1149,36 @@
         document.getElementById("silverAdjustedTotal").innerHTML = "💰 Adjusted Silver Total: ₹ 0.00"; 
         return; 
       } 
+      let tmv = 0, tw = 0, tm = 0, tv = 0;
       let totalAdj = 0; 
-      let html = '<table class="adjustment-table"><thead><tr><th>Item</th><th>Metal Value</th><th>Making</th><th>Wt(g)</th><th>New Making</th><th>New Final</th><th>Update Final Value</th></tr></thead><tbody>';
+      let html = '<table class="adjustment-table"><thead><tr><th>Item</th><th>Metal Value</th><th>Wt(g)</th><th>Original Making</th><th>New Making</th><th>New Final</th><th>Update Final Value</th></tr></thead><tbody>';
       
       silvers.forEach(item => { 
         let adj = silverAdjustData[item.id] || { desiredFinal: item.finalPrice, newMaking: item.makingCharge, newFinal: item.finalPrice }; 
+        tmv += item.itemValue; tw += item.weight; tm += adj.newMaking; tv += adj.newFinal;
         totalAdj += adj.newFinal; 
         html += `<tr>
-          <td>${item.metalName}<br><span style="font-size:0.6rem;">₹${item.rate}/g</td>
-          <td>₹${item.itemValue.toFixed(2)}</td>
-          <td>₹${adj.newMaking.toFixed(2)}<br><span style="font-size:0.55rem;">(orig: ₹${item.originalMakingCharge.toFixed(2)})</td>
-          <td>${item.weight.toFixed(2)}g</td>
-          <td><span id="silver-newmaking-${item.id}" style="color: ${adj.newMaking !== item.originalMakingCharge ? '#2563eb' : '#1e293b'}; font-weight:1000;">₹${adj.newMaking.toFixed(2)}</span></td>
-         
-          <td><span id="silver-newfinal-${item.id}" style="font-weight:700;color:#c0392b;">₹${adj.newFinal.toFixed(2)}</td>
-          <td><input type="number" id="silver-desired-${item.id}" class="adjustment-input" value="${adj.desiredFinal}" step="any"></span></span></span></span></span></span></span></span></span></td>
+          <td>${item.metalName}<br><span style="font-size:0.6rem;">₹${item.rate}/g</span></td>
+          <td>₹${item.itemValue.toFixed(2)}</span></span></span></span></span></span></span></span></td>
+          <td>${item.weight.toFixed(2)}g</span></span></span></span></span></span></span></span></td>
+          <td>₹${item.originalMakingCharge.toFixed(2)}</span></span></span></span></span></span></span></span></td>
+          <td><span id="silver-newmaking-${item.id}" style="color: ${adj.newMaking !== item.originalMakingCharge ? '#2563eb' : '#1e293b'}; font-weight:600;">₹${adj.newMaking.toFixed(2)}</span></td>
+          <td><span id="silver-newfinal-${item.id}" style="font-weight:700;color:#c0392b;">₹${adj.newFinal.toFixed(2)}</span></td>
+          <td><input type="number" id="silver-desired-${item.id}" class="adjustment-input" value="${adj.desiredFinal}" step="any"></td>
         </tr>`;
       }); 
-      html += `<tfoot><tr><td colspan="6"><strong>TOTAL</strong></td><td><strong>₹${totalAdj.toFixed(2)}</strong></td></tr></tfoot></tbody></td>`;
+
+      // BLACK BACKGROUND TOTAL ROW
+      html += `<tfoot><tr style="font-weight:800; background:#1e1e2f; color:#ffffff; font-size:0.9rem;">
+        <td><strong style="color:#ffffff;">TOTAL</strong></td>
+        <td><strong style="color:#f5b042;">₹${tmv.toFixed(2)}</strong></td>
+        <td><strong style="color:#f5b042;">${tw.toFixed(2)}g</strong></td>
+        <td><strong style="color:#f5b042;">₹${silvers.reduce((s, i) => s + i.originalMakingCharge, 0).toFixed(2)}</strong></td>
+        <td><strong style="color:#f5b042;">₹${tm.toFixed(2)}</strong></td>
+        <td><strong style="color:#f5b042;">₹${tv.toFixed(2)}</strong></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+        <td></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+      </tr></tfoot></tbody></table>`;
+
       container.innerHTML = html; 
       document.getElementById("silverAdjustedTotal").innerHTML = `💰 Adjusted Silver Total: ₹ ${totalAdj.toFixed(2)}`; 
       silvers.forEach(item => { 
@@ -1349,19 +1192,10 @@
       if (!item || !item.isSilver) return; 
       let finalDesired = Math.max(desired, item.itemValue); 
       let newMaking, newFinal; 
-      if (item.noGST) { 
-        newMaking = finalDesired - item.itemValue; 
-        if (newMaking < 0) newMaking = 0; 
-        newFinal = item.itemValue + newMaking; 
-      } else { 
-        let before = finalDesired / 1.03; 
-        newMaking = before - item.itemValue; 
-        if (newMaking < 0) newMaking = 0; 
-        newFinal = Math.round(((item.itemValue + newMaking) * 1.03) / 10) * 10; 
-      } 
+      if (item.noGST) { newMaking = finalDesired - item.itemValue; if (newMaking < 0) newMaking = 0; newFinal = item.itemValue + newMaking; } 
+      else { let before = finalDesired / 1.03; newMaking = before - item.itemValue; if (newMaking < 0) newMaking = 0; newFinal = Math.round(((item.itemValue + newMaking) * 1.03) / 10) * 10; } 
       silverAdjustData[id] = { desiredFinal: finalDesired, newMaking, newFinal }; 
-      renderSilverAdjustTable(); 
-      updateSummaryPanel(); 
+      renderSilverAdjustTable(); updateSummaryPanel(); 
     }
     
     function applySilverGrandTotal() { 
@@ -1384,38 +1218,61 @@
         let newFinal = item.noGST ? item.itemValue + newMaking : Math.round(((item.itemValue + newMaking) * 1.03) / 10) * 10; 
         silverAdjustData[item.id] = { desiredFinal: newFinal, newMaking, newFinal }; 
       }); 
-      renderSilverAdjustTable(); 
-      updateSummaryPanel(); 
+      renderSilverAdjustTable(); updateSummaryPanel(); alert("Silver total adjusted"); 
     }
     
     function resetSilverAdjustments() { silverAdjustData = {}; renderSilverAdjustTable(); updateSummaryPanel(); document.getElementById("silverGrandTotalInput").value = 0; }
-    
-   function renderBillList() { 
+     
+    // ========== BILL REGISTER TABLE WITH BLACK TOTAL ROW ==========
+    function renderBillList() { 
       let container = document.getElementById("billContainer"); 
       if (billItems.length === 0) { 
         container.innerHTML = '<div style="text-align:center; padding:2rem;">✨ No items added.</div>'; 
         updateSummaryPanel(); 
         return; 
       } 
-      let html = '<table class="bill-table"><thead><tr><th>Metal</th><th>Item Type</th><th>Making</th><th>Wt(g)</th><th>Before GST</th><th>Final Amount</th><th></th><tr></thead><tbody>'; 
+      let tw = 0, tm = 0, tb = 0, ta = 0;
+      let html = '<table class="bill-table"><thead><tr><th>Metal</th><th>Item Type</th><th>Making</th><th>Wt(g)</th><th>Before GST</th><th>Final Amount</th><th></th></tr></thead><tbody>'; 
+      
       billItems.forEach(it => { 
-        let finalPrice = (it.isSilver ? silverAdjustData[it.id]?.newFinal : goldAdjustData[it.id]?.newFinal) ?? it.finalPrice; 
-        let makingDisplay = it.makingDisplay; 
+        let finalPrice = (it.isSilver ? silverAdjustData[it.id]?.newFinal : goldAdjustData[it.id]?.newFinal) ?? it.finalPrice;
+        let makingChargeAdjusted = (it.isSilver ? silverAdjustData[it.id]?.newMaking : goldAdjustData[it.id]?.newMaking) ?? it.makingCharge;
+        let makingDisplay = it.makingDisplay;
+        
+        tw += it.weight; 
+        tm += makingChargeAdjusted; 
+        tb += it.totalBeforeGst; 
+        ta += finalPrice;
+
         if ((it.isSilver && silverAdjustData[it.id]) || (!it.isSilver && goldAdjustData[it.id])) makingDisplay = "Adjusted"; 
-        html += `<tr><td style="font-weight:500;">${it.metalName}</td>
+        html += `<tr>
+          <td style="font-weight:500;">${it.metalName}</td>
           <td style="font-weight:500;">${it.itemType}<br><span style="font-size:0.6rem;">rate: ₹${it.rate}/g</span></td>
-          
           <td style="font-weight:500;">${makingDisplay}</td>
-          <td style="font-weight:900; color:red; font-size:0.9rem;">${it.weight.toFixed(2)} g</td>
-          <td style="font-weight:500;font-size:0.9rem">₹${it.totalBeforeGst.toFixed(2)}</td>
-          <td style="font-weight:700; color:green; font-size:0.9rem">₹${finalPrice.toFixed(2)}</td><td><button class="delete-item" onclick="removeBillItem(${it.id})">✖</button></td>
-          </tr>`; }); html += '</tbody></table>'; container.innerHTML = html; updateSummaryPanel(); }
+          <td style="font-weight:900; color:red; font-size:0.9rem;">${it.weight.toFixed(2)} g</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+          <td style="font-weight:500; font-size:0.9rem;">₹${it.totalBeforeGst.toFixed(2)}</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+          <td style="font-weight:700; color:green; font-size:0.9rem;">₹${finalPrice.toFixed(2)}</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+          <td><button class="delete-item" onclick="removeBillItem(${it.id})">✖</button></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+        </tr>`;
+      });
+      
+      // BLACK BACKGROUND TOTAL ROW
+      html += `<tfoot><tr style="font-weight:800; background:#1e1e2f; color:#ffffff; font-size:1rem;">
+        <td colspan="2"><strong style="color:#ffffff;">TOTAL</strong></td>
+        <td><strong style="color:#f5b042;">₹${tm.toFixed(2)}</strong></td>
+        <td><strong style="color:#f5b042;">${tw.toFixed(2)}g</strong></td>
+        <td><strong style="color:#f5b042;">₹${tb.toFixed(2)}</strong></td>
+        <td><strong style="color:#f5b042;">₹${ta.toFixed(2)}</strong></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+        <td></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+      </tr></tfoot></tbody></table>`;
+      
+      container.innerHTML = html; 
+      updateSummaryPanel(); 
+    }
    
- 
     function renderAllTables() { renderBillList(); renderGoldAdjustTable(); renderSilverAdjustTable(); updateSummaryPanel(); }
     window.removeBillItem = removeBillItem;
 
-    // Event listeners
     document.getElementById('clearAllBtn').addEventListener('click', clearAllItems);
     document.getElementById('resetGoldAdjustBtn').addEventListener('click', resetGoldAdjustments);
     document.getElementById('applyGoldTotalBtn').addEventListener('click', applyGoldGrandTotal);
@@ -1427,17 +1284,15 @@
     document.getElementById('resetBillTotalBtn').onclick = resetBillToOriginal;
     document.getElementById("metal").addEventListener("change", () => { updateDynamicDropdown(); calculateAndUpdateUI(); });
     document.getElementById("weight").addEventListener("input", calculateAndUpdateUI);
-    document.getElementById("dynamicextraweightremove").addEventListener("change", () => { let val = document.getElementById("dynamicextraweightremove").value; if (val === "stone-remove" || val === "tag-stone-remove") stoneAmountContainer.classList.remove("hidden"); else stoneAmountContainer.classList.add("hidden"); calculateAndUpdateUI(); });
+    document.getElementById("dynamicextraweightremove").addEventListener("change", () => { updateStoneInputVisibility(); calculateAndUpdateUI(); });
     document.getElementById("makingpercentage").addEventListener("input", handleManualPercentChange);
     document.getElementById("makingChargeInput").addEventListener("input", handleManualChargeChange);
 
-    // Initialize
     updateDynamicDropdown();
     setupFocusManagement();
     calculateAndUpdateUI();
     renderAllTables();
 
-    // Collapsible rates
     const ratesHeader = document.getElementById('ratesHeader');
     const ratesContent = document.getElementById('ratesContent');
     if (ratesHeader && ratesContent) {
