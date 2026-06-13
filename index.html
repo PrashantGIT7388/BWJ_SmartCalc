@@ -954,7 +954,7 @@
     function calculateAndUpdateUI() {
       updateAutoHints(); toggleGSTDisplay();
       const c = getFullCalculation();
-      document.getElementById('metalValueDisplay').innerText = '₹ ' + c.metalCost;
+      document.getElementById('metalValueDisplay').innerText = '₹ ' + c.metalCost.toFixed(2);
       document.getElementById('result_before_gst').innerHTML = '₹ ' + c.totalBeforeGst.toFixed(2);
       document.getElementById('result_after_gst').innerHTML = '₹ ' + c.totalAfterGst.toFixed(2);
       if (!isUpdating) {
