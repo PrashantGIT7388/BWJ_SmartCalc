@@ -911,7 +911,8 @@
       const makingCharge = getMakingCharge();
       const totalBefore = metalCost + makingCharge;
       const avoid = shouldAvoidGST();
-      const totalAfter = avoid ? totalBefore : (Math.round(totalBefore * 1.03 / 10) * 10);
+      // const totalAfter = avoid ? totalBefore : (Math.round(totalBefore * 1.03 / 10) * 10);
+      const totalAfter = avoid ? totalBefore : (totalBefore * 1.03);
       return { metalVal: mv, ratePerGram: rate, weight: w, metalCost, makingCharge, totalBeforeGst: totalBefore, totalAfterGst: totalAfter, avoidGST: avoid, variant: getCurrentItemVariant(), removalType: extraWeightRemoveSelect.value, extraDeduction: getExtraWeightRemovalDeduction() };
     }
     function updateAutoHints() {
